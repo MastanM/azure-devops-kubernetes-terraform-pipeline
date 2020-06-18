@@ -41,9 +41,9 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
-   - job: SecondJob
-     steps:
-     - bash: echo Build SecondJob
+    - job: SecondJob
+      steps:
+      - bash: echo Build SecondJob
  - stage: DevDeploy
    variables:
      environment: Dev
